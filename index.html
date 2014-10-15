@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Gentium+Book+Basic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="my-carousel" class="carousel">
+        <img src="img/chicken.jpeg" alt="Chook chook">
+        <img src="img/dog.jpeg" alt="Nawww">
+        <img src="img/gorilla.jpeg" alt="GORILLA">
+        <img src="img/hedgehog.jpeg" alt="Tehe">
+        <img src="img/owl.jpeg" alt="Twit Twoo">
+        <img src="img/parrots.jpeg" alt="Hello hello">
+        <img src="img/rabbit.jpeg" alt="Something Just Happened!">
+    </div>
+
+    <script type="text/tmpl" id="carousel-template">
+        <ul>
+            <%= imageList %>
+        </ul>
+    </script>
+
+    <script type="text/tmpl" id="image-template">
+        <li>
+            <%= image %>
+            <% if ( image != null ) { %>
+                <span><%= text %></span>
+            <% } %>
+        </li>
+    </script>
+
+    <script type="text/tmpl" id="loader-template">
+        <div class="loader">
+            <div id="box_1"></div><div id="box_2"></div><div id="box_3"></div>
+        </div>
+    </script>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/underscore-1.7.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

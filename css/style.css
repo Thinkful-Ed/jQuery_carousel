@@ -1,0 +1,43 @@
+body {
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.loader {
+    margin: 0 auto;
+    top: 100px;
+}
+
+.carousel {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.carousel ul {
+    position: relative;
+    width: 4200px;
+}
+
+.carousel ul li {
+    float: left;
+    /* styling */
+    position: relative;
+
+}
+
+.carousel li span {
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
